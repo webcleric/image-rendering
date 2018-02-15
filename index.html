@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image-Rendering</title>
+
+	<style>
+	#kontenjer {
+		width: 400px;
+    	height: 400px;   
+    	top:0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+	}
+	.neka-slika {
+		margin: 0 auto;
+		text-align: center;
+		image-rendering: pixelated;
+	}
+	</style>
+
+</head>
+<body>
+	<div id="kontenjer">
+		<h1>Test: <i>image-rendering</i> atribut</h1>
+		<div class="neka-slika">
+			<img src="slika.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>
