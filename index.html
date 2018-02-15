@@ -5,6 +5,17 @@
 	<title>Image-Rendering</title>
 
 	<style>
+	.siva {
+  		--siva-boja: gray;
+	}
+	.siva {
+		color: gray;
+	}
+	.roza {
+		color: purple;
+	}
+	
+	
 	#kontenjer {
 		width: 400px;
     	height: 400px;   
@@ -19,15 +30,34 @@
 		text-align: center;
 		image-rendering: pixelated;
 	}
+	blockquote {
+		text-align: left;
+		margin: 0 auto;
+			margin-top: 20px;
+		color: var(--siva-boja);
+	}
 	</style>
 
 </head>
 <body>
 	<div id="kontenjer">
-		<h1>Test: <i>image-rendering</i> atribut</h1>
+		<h2>Test: <i>image-rendering</i> attribute</h2>
 		<div class="neka-slika">
 			<img src="slika.jpg" alt="">
 		</div>
+		<h3>Properties to use:</h3>
+		<blockquote class="one">
+			<span class="siva">/* Keyword values */</span><br>
+			<span class="roza">image-rendering:</span> auto;<br>
+			<span class="roza">image-rendering:</span> crisp-edges;<br>
+			<span class="roza">image-rendering:</span> pixelated;<br>
+		</blockquote>
+		<blockquote class="two">
+			<span class="siva">/* Global values */</span><br>
+			<span class="roza">image-rendering:</span> inherit;<br>
+			<span class="roza">image-rendering:</span> initial;<br>
+			<span class="roza">image-rendering:</span> unset;<br>
+		</blockquote>		
 	</div>
 </body>
 </html>
